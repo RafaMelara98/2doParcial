@@ -9,6 +9,35 @@ package Vehiculo;
  *
  * @author Rafael Melara
  */
-public class Coaster {
+public class Coaster implements vehiculos {
+    private int vida;
+    private int costo;
+
+    @Override
+    public String toString() {
+        return "Coaster{" + "vida=" + vida + ", costo=" + costo + '}';
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
+    
+
+    @Override
+    public void crear() {
+        System.out.println("Vehiculo creado rrrrrr");
+    }
     
 }
