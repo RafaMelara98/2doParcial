@@ -6,6 +6,7 @@
 package rafamelara.world;
 
 import Centro.CentrodemandoElfos;
+import static java.awt.SystemColor.menu;
 import java.util.Scanner;
 
 /**
@@ -27,6 +28,12 @@ public class RafaMelaraWorld {
         jug1 = leer.nextLine();
         System.out.println("Jugador 2:");
         jug2 = leer.nextLine();
+        
+       
+      Menu menu = Menu.getInstance();
+      
+      menu.menu();
+      
       
       
     }

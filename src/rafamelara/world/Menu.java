@@ -17,6 +17,7 @@ import Raza.Orcos;
 import Recursos.recurso;
 import Vehiculo.Caballos;
 import Vehiculo.Coaster;
+
 import java.util.Scanner;
 
 /**
@@ -38,6 +39,18 @@ public class Menu {
     RecolectarD d;
     RecolectarM mt;
     RecolectarO or;
+
+    private static Menu instance;
+
+    private Menu() {
+    }
+
+    public synchronized static Menu getInstance() {
+        if (instance == null) {
+            instance = new Menu();
+        }
+        return instance;
+    }
 
     public void menu() {
         Scanner leer = new Scanner(System.in);
@@ -123,10 +136,9 @@ public class Menu {
                                 break;
 
                         }
-
+                        break;
                     }
                 case 2:
-
                     int opcj2 = 0;
                     int turno2;
                     while (opcj2 != 4) {
@@ -189,19 +201,19 @@ public class Menu {
                                         c.crear();
                                         break;
                                     case 2:
-                                       c.crear();
+                                        c.crear();
                                         break;
-                                    
+
                                 }
                                 break;
 
                         }
 
                     }
-                break;
-                
+                    break;
+
                 case 3:
-                   
+
                     int opcj3 = 0;
                     int turno3;
                     while (opcj3 != 4) {
@@ -264,16 +276,16 @@ public class Menu {
                                         c.crear();
                                         break;
                                     case 2:
-                                       c.crear();
+                                        c.crear();
                                         break;
-                                    
+
                                 }
                                 break;
 
                         }
 
-                    }    
-                break;
+                    }
+                    break;
             }
 
         } while (opc != 4);
