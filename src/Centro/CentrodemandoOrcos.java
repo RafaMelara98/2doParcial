@@ -19,6 +19,7 @@ public class CentrodemandoOrcos implements centro {
     public void Crear() {
         recurso s = null;
         System.out.println("Centro de mando iniciado");
+        s.getOro();
         
     }
     

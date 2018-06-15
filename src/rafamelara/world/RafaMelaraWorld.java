@@ -5,6 +5,9 @@
  */
 package rafamelara.world;
 
+import Centro.CentrodemandoElfos;
+import java.util.Scanner;
+
 /**
  *
  * @author Rafael Melara
@@ -15,7 +18,17 @@ public class RafaMelaraWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("ya deje el ciclo");
+        
+         Scanner leer = new Scanner(System.in);
+        String jug1;
+        String jug2;
+        System.out.println("Ingrese sus nombres ");
+        System.out.println("Jugador 1:");
+        jug1 = leer.nextLine();
+        System.out.println("Jugador 2:");
+        jug2 = leer.nextLine();
+      
+      
     }
     
 }

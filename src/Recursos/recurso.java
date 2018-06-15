@@ -12,9 +12,9 @@ import java.util.logging.Logger;
  * @author Rafael Melara
  */
 public class recurso {
-    private int  oro;
-    private int metal;
-    private int diamante;
+    private int  oro = 10000;
+    private int metal = 5000;
+    private int diamante = 3000;
 
     public recurso(int oro, int metal, int diamante) {
         this.oro = oro;
