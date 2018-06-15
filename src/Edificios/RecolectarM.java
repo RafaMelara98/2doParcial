@@ -9,14 +9,15 @@ package Edificios;
  *
  * @author Rafael Melara
  */
-public class RecolectarO implements edificio {
-    private int vida = 100;
+public class RecolectarM implements edificio{
+    
+     private int vida = 100;
     private int price = 100;
     
 
     @Override
     public void crearEdificio() {
-        System.out.println("se ha creado el recolector de oro");
+        System.out.println("se ha creado el recolector de metales");
     }
 
     public int getVida() {
@@ -34,7 +35,6 @@ public class RecolectarO implements edificio {
     public void setPrice(int price) {
         this.price = price;
     }
-    
     
     
 }

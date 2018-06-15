@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Raza;
+package rafamelara.world;
 
 /**
  *
  * @author Rafael Melara
  */
-public class FactoryRaza {
-    
+public class Menu {
     
 }
